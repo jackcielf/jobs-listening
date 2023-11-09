@@ -1,0 +1,15 @@
+.jobs-list__contaianer {
+  .box__image {
+    height: 150px;
+    background: url(/assets/images/bg-header-desktop.svg) no-repeat;
+    background-size: cover;
+    background-color: var(--cyan);
+  }
+
+  .box__jobs {
+    padding: 4em 8em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+  }
+}

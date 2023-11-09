@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+:root {
+  --cyan: #5ca3a3;
+  --cyan-shadow: #5ca3a353;
+  --cyan-bg: #f0fafa;
+  --cyan-dark: hsl(180, 8%, 52%);
+  --cyan-dark-bg: #2c3a3a;
+  --cyan-bg2: #edf5f5;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--cyan-bg);
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}

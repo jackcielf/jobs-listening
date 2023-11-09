@@ -1,0 +1,30 @@
+<div class="job-card__container">
+  <div class="left__box">
+    <img [src]="data.logo" [alt]="data.company" />
+
+    <div class="data__box">
+      <ul class="list-data__job">
+        <li>{{ data.company }}</li>
+        <li [ngClass]="data.new ? '' : 'd-none'">new!</li>
+        <li [ngClass]="data.featured ? '' : 'd-none'">featured</li>
+      </ul>
+      <div class="name__job">
+        <p>{{ data.position }}</p>
+      </div>
+      <ul class="details__job">
+        <li>{{ data.postedAt }}</li>
+        <li class="dot"></li>
+        <li>{{ data.contract }}</li>
+        <li class="dot"></li>
+        <li>{{ data.location }}</li>  
+      </ul>
+    </div>
+  </div>
+
+  <ul class="skill-required__box">
+    <li>{{ data.role }}</li>
+    <li>{{ data.level }}</li>
+    <li *ngFor="let language of data.languages">{{ language }}</li>
+    <li *ngFor="let tool of data.tools">{{ tool }}</li>
+  </ul>
+</div>
