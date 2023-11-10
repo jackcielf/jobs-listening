@@ -13,3 +13,10 @@
     row-gap: 1em;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .box__jobs {
+    padding: 6em 2em !important;
+    row-gap: 4.5em !important;
+  }
+}

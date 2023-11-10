@@ -1,4 +1,4 @@
-<div class="job-card__container">
+<div class="job-card__container" [ngClass]="data.new && data.featured ? 'border-new': ''">
   <div class="left__box">
     <img [src]="data.logo" [alt]="data.company" />
 
@@ -16,10 +16,12 @@
         <li class="dot"></li>
         <li>{{ data.contract }}</li>
         <li class="dot"></li>
-        <li>{{ data.location }}</li>  
+        <li>{{ data.location }}</li>
       </ul>
     </div>
   </div>
+
+  <div class="line"></div>
 
   <ul class="skill-required__box">
     <li>{{ data.role }}</li>
